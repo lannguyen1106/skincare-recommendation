@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "skincare-recommendation",
+  "private_key_id": "330360c1aebaaf150cfb2ee6b17789a30a90f0c1",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCvHMkEaLmyWeJ9\nYJUmSJe/UHaE3w33gZGDgzVD7URT4aql+nwus9zTBVKJqzZrtu8lpaMuc9MdqjU2\nhYucRZz62+hfF/W8J5zMJEe/CuG8JJLuMxPIK5nIgm8+JB5VCs1EDW8FdHdvhHDC\nZERqdYZuTfoYt36BCaRWT6fDLpH3In3zT8DEslgE1Pf1FkegrcwHVnpvE8DQbuTz\n8RdiS/YJQAw0C38AtCl8ytPvvfFyV4ot9YlRRqURzNdFhYRPoDdXwYO9tnvZnViW\nFM6LmLgFugZc3TqbjNbm9G4xgaAOc8uZRxJWqr9eUmGTIBAdX4d+EIWrSTeRQd5c\nBHI74vljAgMBAAECggEAIMmj/dZaBsH7vXwLETsAZsr7Fg/pvpEdHOHBZHGVnJsh\nZ6iJ/fihfUV+2dYb/3kmOAdWkYkQW3qWMho5NM54ASSR0tRap5tHKZYVdPjloWO7\nuywHJTC8v6VkjN8YatX17ysQwZW4E0JaFpvNj51nyVmCXYRmBGU4xwxtHgenPv1/\nLO9kaVo/X/SfoefvPIYApp6+O5GNdedt8lac7yyLoxxHiU4g/MgrGzi+Oy9AIZfU\nJVFJZldy5t2MB+lksgaNYArC8OVzIXU1iafudQbkj9C+i+fJeFgYCEJDZPsff8gN\nFhbRFz799sRFUsFGJi4NJek/E/Mnwt4OI9k/oC+YaQKBgQD1h3qIoZ+P5H6M+uQ4\nii3eIGGE1pB1vkIQqRaNzWZUwUtYXj55ulo2u2e3eqPJf/y1gTcJkX058KwxGBQZ\nt1hxp3BqmxUFgh6eeHAf+nTQ3FQeKgTgwiG3JqrgYiLQnk6L43Xo1Y28iHSwDx+p\n2vCFsKBnrBR4+oBaw9CKNPrGxwKBgQC2lItGxEhcjn1wU+7RLiGw7gqzahP+KdXL\nmQM739hIOkBLKEauzYj+rjJzeaPcXcEU8rpPxhx3PmigOOM0/bpheaetOOdEQOpA\nOIZd5MpUTEX1nszObKxE0N3Zg4vc1WYsvloJBUYK6gOTyVXFAZGhpkAiZQznWmfJ\nHACDS5SshQKBgQCv7KjhqVzZD1GV1lccI/YFiJIXSl4r320a3uzoIdpGtFE2OiDt\nu5bUTKdeEiO1R11c9/7lfjeKAmZ+rtAINRTMKrsjx4bicX9a8NT2NNDqrlQfYOAp\n4y+hObWKHQbxD90b4pkjgZCTG/rwA4YegF+CizID1oq8vFCnuFJ+FMPzFQKBgEIc\nEzoyhEkPRxhPK+AOJiDccH96X3beSw2HgAZEDRpKDVGpab6NqZceGCJ73vtB71HY\neeG8yD3dGSE6t/pODRiSZkZwnjy2jJtoXC7PUvunCoXfVCVCcDYSsuG5ogD6PB7j\nZdJyWGRHS7hNZIMLCGJRwlMx57Q1pfLJ8t2XlmPJAoGAOXrXUR+5xPkazIA7hoYO\nJEORnuGpkHk+SdDC96Hv4eDENuSjo1aMI3FpsQth/ptUoVYzFFcW+Cxs0xk9AzBn\nPfm1ZasbOoU8PiXcC34tzX5AZnFoey7w3p99bOCZCSwg731Me/ygS1vYUaeSdJPM\n+xTVn3sPdoFNBOgssV1vRC4=\n-----END PRIVATE KEY-----\n",
+  "client_email": "skincare-recommendation@skincare-recommendation.iam.gserviceaccount.com",
+  "client_id": "117437772854753659421",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/skincare-recommendation%40skincare-recommendation.iam.gserviceaccount.com"
+}
