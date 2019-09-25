@@ -13,7 +13,7 @@ app.secret_key = b'A Super Secret Key'
 
 
 app.register_blueprint(home_page)
-
+app.register_blueprint(signin_page)
 
 if __name__ == '__main__':
     app.run(debug=True)
