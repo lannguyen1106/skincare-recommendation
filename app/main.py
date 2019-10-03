@@ -13,11 +13,9 @@ app.secret_key = b'A Super Secret Key'
 
 
 app.register_blueprint(home_page)
-app.register_blueprint(signin_page)
-app.register_blueprint(sell_page)
-app.register_blueprint(upload_api)
-app.register_blueprint(checkout_page)
-app.register_blueprint(charge_page)
+app.register_blueprint(recommend_api)
+
+
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)

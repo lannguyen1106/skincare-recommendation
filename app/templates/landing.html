@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+    <section id="hero" class="home">
+      <div class="hero-container">
+          <div class="container">
+            <h1>Welcome to Skin Therapy </h1>
+            <h2>Our recommendation system will assist you to choose your best skincare products</h2> 
+            <a href="{{ url_for('home_page.display') }}" style = "background-color: white; border-radius: 100px; margin: 10px; padding: 14px; font-size: 16px"> Get Started</a>
+          </div>
+      </div>
+    </section>  
+
+{% endblock %}

@@ -1,0 +1,1 @@
+export GOOGLE_APPLICATION_CREDENTIALS="/home/lanng/Documents/coderschool/final_project/skincare-recommendation/skincare-recommendation-330360c1aeba.json"

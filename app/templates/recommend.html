@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block content %}
+  <section id="hero" class="section-recommend">
+    <div class="hero-container">
+      <div class="container">
+          <a href="/">BACK TO HOME</a>
+          <h1>Here are what we recommend to you:</h1>
+      </div>
+
+      <div class="container your-profile">
+        <h2 class="title">Your skin profile:</h2>
+        <p>Skin type: {{ user_profile.skin_type }}</p>
+        <p>Skin tone: {{ user_profile.skin_tone }}</p>
+      </div>
+      <div class="container recommended-products">
+        <div class="tile is-ancestor">
+          {% for column in [0, 1, 2, 3]%}
+          <div class="tile is-parent is-3 is-vertical">
+            <div class="tile is-child">
+              {% for product in products[column::4] %}
+                <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-4by3">                        
+                        {% set image_url = 'https://bulma.io/images/placeholders/1280x960.png' %}
+                        {% if product.image_url!='Not Found' %}
+                          {% set image_url = product.image_url %}
+                        {% endif %}
+                        <img src="{{ image_url }}" alt="Placeholder image">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-content">
+                          <p class="title is-4">{{ product.title }}</p>
+                          <p class="subtitle is-6">{{ product.category }}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              {% endfor %}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+    </div>
+  </section>
+  
+  
+{% endblock %}

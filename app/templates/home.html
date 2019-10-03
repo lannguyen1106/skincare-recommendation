@@ -1,49 +1,44 @@
 {% extends "base.html" %}
 {% block content %}
-  <section class="hero is-primary is-bold is-medium">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title">Buy and Sell Product Online</h1>
-        <h2 class="subtitle"><strong>Start exploring now.</strong></h2>
-      </div>
-    </div>
-  </section>
-  <section class="section">
-    <div class="container">
-        <h1 class="title">What's new</h1><br>
-      </div>
-      <div class="container">
-        <div class="tile is-ancester">
-          {% for column in [0,1,2] %}
-          <div class="tile is-parent is-4 is-vertical">
-            <div class="tile is-child"> 
-              {% for product in products[column::3] %}
-              <div class="card">
-                <div class="card-image">
-                  <figure class="image is-square">
-                    <img src="https://storage.cloud.google.com/{{ bucket }}/{{ product.image }}" onerror="this.src='https://storage.cloud.google.com/{{bucket}}/placeholder.png'">
-                  </figure>
-                </div>
-                <div class="card-content">
-                  <h1 class="title is-spaced">{{ product.name }}</h1>
-                  <p class="subtitle is-6">{{ product.description }}</p>
-                  <p class="subtitle is-4">${{ product.price }}</p>
-                  <p>
-                    {% for label in product.labels[:3] %}
-                    <span class="tag is-light is-medium">{{ label }}</span>
-                    {% endfor %}
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <a class="card-footer-item" href="/checkout?id={{product.id}}">Purchase</a>
-                </div>
-              </div>
-              <br>
-              {% endfor %}
-            </div>
+  <section id="hero" class="home">
+      <div class="hero-container">
+          <div class="container">
+            <h1>Welcome to Skin Therapy </h1>
+            <h2>Our recommendation system will assist you to choose your best skincare products</h2>
           </div>
-          {% endfor %}
-        </div>
+
+          <div class="container form-profile">
+              <div class="container">
+                <section class="get-profile">
+                  <form action="/recommend" name="form-get-profile" method="POST">
+                    <div class="profile-section">
+                      <h3 class="form-title">Choose Your Skin Type</h3>
+                      <div class="list-options">
+                          <label><input type="radio" name="options_skin_type" value="normal"> Normal</label>
+                        <label><input type="radio" name="options_skin_type" value="dry"> Dry</label>
+                        <label><input type="radio" name="options_skin_type" value="combination"> Combination</label>
+                        <label><input type="radio" name="options_skin_type" value="oily"> Oily </input></label>
+                      </div>
+                    </div>
+                    
+                    <div class="profile-section">
+                      <h3 class="form-title">Choose Your Skin Tone</h3>
+                      <div class="list-options">
+                          <label><input type="radio" name="options_skin_tone" value="light"> Light</label>
+                          <label><input type="radio" name="options_skin_tone" value="deep"> Deep</label>
+                          <label><input type="radio" name="options_skin_tone" value="olive"> Olive</label>
+                          <label><input type="radio" name="options_skin_tone" value="fair"> Fair</label>
+                          <label><input type="radio" name="options_skin_tone" value="medium"> Medium</label>
+                          <label><input type="radio" name="options_skin_tone" value="dark"> Dark</label>
+                          
+                      </div>
+                    </div>
+            
+                    <button type="submit">Submit</button>
+                  </form>
+                </section>
+              </div>
+          </div>
       </div>
   </section>
 {% endblock %}
