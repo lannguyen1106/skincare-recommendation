@@ -1,14 +1,11 @@
 runtime: python37
 
 env_variables:
-  GCP_PROJECT: "skincare-recommendation"
-  GCS_BUCKET: "skincare-bucket"
-  FIREBASE_CONFIG: "firebase_config.json"
 
 handlers:
   - url: /static
     static_dir: static
-  
+    
   - url: /.*
     script: auto
     secure: always
