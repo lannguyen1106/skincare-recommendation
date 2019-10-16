@@ -2,8 +2,6 @@ from flask import Blueprint, render_template, jsonify, request, redirect
 import tensorflow as tf
 from tensorflow.keras.models import Model
 
-# from models import product_catalog
-# from middlewares.auth import auth_optional
 import numpy as np
 import pandas as pd
 
